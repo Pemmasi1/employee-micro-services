@@ -4,13 +4,13 @@ import com.dailycodebuffer.employeeservice.model.Employee;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Repository
 public class EmployeeRepository {
 
-    private List<Employee> employees
-            = new ArrayList<>();
+    private List<Employee> employees = Arrays.asList(new Employee(1l, 2l, "Siva", 27, "Developer"));
 
     public Employee add(Employee employee) {
         employees.add(employee);
